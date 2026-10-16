@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="How the Clinic Backup integration uses Google Drive data, protects backup contents and handles access and deletion.">
+  <title>Privacy policy · Clinic Backup</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header class="site-header"><a class="brand" href="index.html">Clinic Backup<span>Maruthur</span></a><nav aria-label="Main navigation"><a href="index.html">Home</a></nav></header>
+  <main id="content" class="policy">
+    <p class="eyebrow">Privacy policy</p>
+    <h1>Your account.<br>Your backup copies.</h1>
+    <p class="muted">Last updated: 16 October 2026</p>
+    <p>Clinic Backup is a private, administrator-managed backup integration for clinic operations in Maruthur. This policy describes the integration’s use of Google account and Drive data. It is not the clinic’s general patient-care privacy notice.</p>
+    <section><h2>Information the integration handles</h2><p>The integration uses Google authorisation credentials to connect the account chosen by the administrator. It processes account storage-quota information and metadata for its backup files and folders, including identifiers, sizes and checksums. It uploads encrypted backup files and may download those files to verify their integrity.</p><p>Backup contents can include clinic, patient, clinical, financial and attachment data. These contents are encrypted locally before upload. Unencrypted backup contents are not uploaded by this integration.</p></section>
+    <section><h2>Google Drive permissions and purpose</h2><p>The requested permission is <code>https://www.googleapis.com/auth/drive.file</code>. The integration uses its app-created backup folder and files to store, locate and verify recovery copies. It does not request unrestricted access to all files in the account. Google data is used only to provide and maintain this backup functionality.</p></section>
+    <section><h2>Storage and security</h2><p>Encrypted recovery copies are stored in the authorised Google Drive account. Local copies and temporary backup staging are stored on the clinic-controlled computer with restricted filesystem access. Authorisation tokens are stored using the application framework’s encrypted credential storage. The integration does not upload the private recovery key.</p><p>The clinic administrator is responsible for controlling account access, protecting the separately held recovery key and testing recovery. Backup encryption and successful upload do not, by themselves, guarantee that recovery has been tested.</p></section>
+    <section><h2>Sharing and other uses</h2><p>Clinic Backup does not sell Google user data, use it for advertising, or use it to train AI or machine-learning models. The integration does not send Google user data to unrelated analytics or marketing services. Google processes the files and authorisation requests as the selected storage and identity provider, under its own applicable terms and policies.</p></section>
+    <section><h2>Retention, deletion and revoking access</h2><p>Backup copies remain until the authorised operator removes them or applies an explicitly approved retention policy. The current manual-backup integration does not automatically delete Drive backups. The operator can delete copies through Google Drive and manage local copies separately. Drive trash and disconnected recovery copies must also be considered when removing data.</p><p>You can revoke the application’s access through your Google Account’s third-party connections settings. Revoking access stops future authorised operations but does not automatically delete existing backups. Contact the clinic administrator about backup access, retention or deletion requests.</p></section>
+    <section><h2>This public website</h2><p>These information pages contain no sign-in form, patient records, backup downloads, tracking scripts or analytics. The hosting provider, GitHub Pages, may process standard connection information under its own privacy policies.</p></section>
+    <section><h2>Questions and changes</h2><p>Contact <a href="mailto:clinic.ops.maruthur@gmail.com">clinic.ops.maruthur@gmail.com</a> about this integration’s privacy practices. Do not email medical records, passwords, tokens or backup contents. This policy may be updated when the integration’s data practices change; the latest revision date appears above.</p></section>
+  </main>
+  <footer><a href="index.html">Clinic Backup · Maruthur</a><span>Privacy policy</span></footer>
+</body>
+</html>
